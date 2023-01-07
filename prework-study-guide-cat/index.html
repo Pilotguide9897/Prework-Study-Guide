@@ -17,17 +17,19 @@
       <section class="card" id="terminal/command line">
         <h2>Terminal/Command Line</h2>
         <ul>
-          <li>The command line allows us to input text commands to execute operating system functions (e.g., creating a new folder or opening a file).</li>
-          <li>The terminal is the application that allows us to interact with the shell, the software that interprets and executes the various commands that get typed into the terminal.</li>
-          <li>cd: allows us to change directories.</li>
-          <li>ls: allows us to see a list of files and directories on our computer.</li>
-          <li>pwd: short for 'print working directory,' this command prints out the directory that we are currently in inside the terminal.</li>
-          <li>cd ..: allows you to navigate backward one directory at a time.</li>
-          <li>mkdir: allows you to "MaKe a directory. To create a named directory, simply type mkdir __________ (name of directory to be created).</li>
-          <li> touch: this command allows the creation of a new file. You write touch __________.hypothetical file type.</li>
-          <li>open: this command is used to open files in the macOS command line. The start command is used for Windows. E.g., start __________.hypothetical file type.</li>
-          <li>Code .</li>
-          <li>To change the name of a file and moving a file using the command line you must use the ...</li>
+          <li>The command line allows an individual to input text commands to execute operating system functions (e.g., creating a new folder or opening a file).</li>
+          <li>The terminal is the application that allows people to interact with the shell, the software that interprets and executes the various commands that get typed into the terminal.</li>
+          <h4>The following are some commands that may be useful when learning to use the terminal:</h1>
+          <li>cd: This command allows us to change directories.</li>
+          <li>ls: This command allows us to see a list of files and directories on our computer.</li>
+          <li>pwd: This command is short for 'print working directory,' this command prints out the directory that we are currently in inside the terminal.</li>
+          <li>cd .. :This command allows you to navigate backward one directory at a time.</li>
+          <li>mkdir: This command allows you to "MaKe a directory. To create a named directory, simply type mkdir (name of directory to be created).</li>
+          <li>touch: This command allows the creation of a new file. You write touch (name of file).hypothetical file type.</li>
+          <li>open: This command is used to open files in the macOS command line. The start command is used for Windows (e.g., start (name of file).hypothetical file type).</li>
+          <li>code: The code command is used if you want to open a file using VS Code (e.g. code index.html). You can also open multiple files at once if they are in the same location in a file directory (e.g., code index.html style.css documentation\readme.md).</li>
+          <li>mv: The mv command may be used to move files or folders from one location to another on the same computer. Note that the mv command moves the file or folder from its old location and puts it in the new location, it does not create a copy. For more information on how to copy a file see below. The mv command also allows you to rename your file/folder and also change the location of the renamed file if you wish to do so (e.g., mv old-folder-name new-folder-name). One thing that you can do is type mv and then open finder and drag the file onto the terminal to copy the full path of the file to the terminal.</li>
+          <li>cp: The cp command is used to make a copy of a file. For example, to copy a folder named Expenses in your Documents folder to another volume named Data: (% cp -R ~/Documents/Expenses /Volumes/Data/Expenses). The -R flag causes cp to copy the folder and its contents. Note that the folder name does not end with a slash, which would change how cp copies the folder.</li>
         </ul>
       </section>
       <section class="card" id="terminal/command line">
@@ -35,16 +37,15 @@
           <ul>
             <li>An SSH key is an access credential for the secure shell (SSH) network protocol.</li>
             <li>Generating SSH keys allows developers to interface with certain remote services without having to constantly retype login information.</li>
-            <li>To The following is a summary of the steps to check for existing SSH keys: Enter ls -al ~/.ssh in your terminal (Git Bash for Windows or Terminal for macOS) to see if any existing SSH keys are present. Look for a public SSH key that ends in .pub. For example, id_rsa.pub, id_ecdsa.pub, or id_ed25519.pub. If you see an existing SSH key pair (a public SSH key like id_rsa.pub and a private SSH key like id_rsa), then you can skip generating a new SSH key and use your existing keys to add to the ssh-agent in a later step. If you receive an error that it does not exist, that means you will need to generate a new SSH key pair.</li>
+            <li>The following is a summary of the steps to check for existing SSH keys: (1) Enter ls -al ~/.ssh in your terminal (Git Bash for Windows or Terminal for macOS) to see if any existing SSH keys are present. (2) Look for a public SSH key that ends in .pub. For example, id_rsa.pub, id_ecdsa.pub, or id_ed25519.pub. If you see an existing SSH key pair (a public SSH key like id_rsa.pub and a private SSH key like id_rsa), then you can skip generating a new SSH key and use your existing keys to add to the ssh-agent in a later step. If you receive an error that it does not exist, that means you will need to generate a new SSH key pair.</li>
             <li>To generate an SSH key: Enter ssh-keygen -t ed25519 -C “your_email@example.com” in your terminal to create a new SSH key. When prompted, save your key in the default file location and create a secure passphrase.</li>
-            <li>Once you have your SSH key, you can add them to the ssh-agent by: </li>
-            <li>Enter eval “$(ssh-agent -s)” in your terminal to start the ssh-agent. For macOS, you might need to run a few additional commands to start the ssh-agent and add your SSH key. That can include running sudo -s -H before starting the ssh-agent, or you may need to use exec ssh-agent bash or exec ssh-agent zsh to run the ssh-agent. Follow the GitHub Docs carefully to do this step successfully. Add your private SSH key to the ssh-agent using the ssh-add command.</li>
+            <li>Once you have your SSH key, you can add them to the ssh-agent by: (1) Entering eval “$(ssh-agent -s)” in your terminal to start the ssh-agent. For macOS, you might need to run a few additional commands to start the ssh-agent and add your SSH key. That can include running sudo -s -H before starting the ssh-agent, or you may need to use exec ssh-agent bash or exec ssh-agent zsh to run the ssh-agent. Follow the GitHub Docs carefully to do this step successfully. Add your private SSH key to the ssh-agent using the ssh-add command.</li>
           </ul>
           </section>
       <section class ="card" id ="html-section">
         <h2>HTML</h2>
         <ul>
-          <li>HTML is used to create the structure of a webpage. You can think of HTML as the frame of a website. It is made up of elements that work together to provide content and the basic framework for all pages on the web.</li>
+          <li><h5>HTML is used to create the structure of a webpage. You can think of HTML as the frame of a website. It is made up of elements that work together to provide content and the basic framework for all pages on the web.<h5/></li>
           <li>Elements are a type of content on a webpage. Common types of elements in HTML are: (1) Text elements, (2) Image elements, (3) Header elements, and (4) List elements. These elements add visible information on the page. </li>
           <li>In addition to visible elements, there are also elements that are used to divide the content on a page and describe the content to browsers and other developers. Examples of these are: (1) Meta-related elements, (2) Content division elements, and (3) Semantic elements.</li>
           <li>In HTML, elements are composed of an opening tag and a closing tag represented with angled brackets [< >]. These tags contain everything that we want to include about the element and include content and even other nested elements.</li>
@@ -59,7 +60,7 @@
       <section class ="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>CSS is useful for adding visual elements to websites.</li>
+          <li><h5>CSS is useful for adding visual elements to websites.<h5/></li>
           <li>A margin indicates how much space we want around the outside of an element.</li>
           <li>A padding is not quite the same as a margin, although people often confuse them. A padding indicates how much space we want around the content inside of an element.</li>
           <li>We can assign colours in css using semantic reference such as, grey, or using a hexidecimal code (hex #) to refer to a colour.</li>
@@ -88,19 +89,21 @@
       <section class="card" id="javascript-section">  
         <h2>Javascript</h2>
         <ul>
-          <li>JavaScript is used to add functionality and interactivity to a website.</li>
+          <li><h5>JavaScript is used to add functionality and interactivity to a website.<h5/></li>
           <li>A variable is a named container that allow us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
           <li>Functions are the building blocks of JavaScript. When we create a function, we are defining a block of code that performs a specific task, and giving it a unique name. However, just defining a function does not mean that it will execute in our code automatically. To execute a function, we must call it in our code.</li>
           <li>We use an open curly bracket after a function to show that it is not adding an arugment.</li>
           <li>If statements allow us to perform logical comparisons between a value and what you expect. Then it allows you to use that information to perform an action.</li>
-          <li>For loops can be very useful for controlling the work flow. For loops function by running a section of code repeatedly until a certain condition has been satisfied. For loops contain two sections: A header and a body.</li>
+          <li>For loops can be very useful for controlling the work flow. For loops function by running a section of code repeatedly until a certain condition has been satisfied. For loops contain two sections: a header and a body. In addition, (1) The keyword For that starts the loop, (2) the condition being tested, and (3) the EndFor keyword that terminates the loop (For x = Start to End/...Statements to be performed go here/EndFor). The value of x must be an integer variable and the values of Start and End must be integers, integer variables, or integer constants. The major difference between the While and For looping structures is that a For loop will run a predetermined number of times. </li>
+          <li>Since a loop continues until a condition becomes false, be careful not to set up a loop that never becomes false and runs infinitely. This can lock up a computer. You must think carefully about the condition meant to terminate the loop to be sure it becomes false at some time. </li>
+          <li>You use the While-EndWhile statement structure to perform Looping. A While Loop repeats or loops WHILE a condition is true. A While loop consists of three parts: (1) The While key word that begins the loop, (2) the condition to be tested each time the loop iterates or is performed, (3) the EndWhile keyword that ends the loop.</li>
           <li>JavaScript contains five basic (primitive) data types. These types are strings, numbers, booleans, undefined, and null.</li>
           <li>Strings are collections of alphaneumeric characters and symbols. Strings are useful for storing letters and words.</li>
-          <li>Booleans may only have two values, true and false, and represent all data which has only two states.</li>
+          <li>Booleans can only have two values, true and false. They represent all data which has only two states.</li>
           <li>Undefined means that a variable has been created, but that it has not been assigned a value.</li>
           <li>Two other common data types in JavaScript are objects and arrays. Both of these data types consist of collections, and are a way to group together multiple points of data into a single piece.</li>
-          <li>Arrays are a special variable that holds more than one value. Arrays alloy you to hold more than one piece of data under a single title and you can access specific numbers in the annex by referring to an index number. It is common practice to declare an array by using the const keyword.</li>
+          <li> Arrays are a special variable that holds more than one value. Arrays allow you to hold more than one piece of data under a single title and you can access specific numbers in the annex by referring to an index number. It is common practice to declare an array by using the const keyword.</li>
           <li>When creating an array in JS, spaces and line breaks are unimportant. A declaration may span multiple lines.</li>
           <li>Objects in JS can be very diverse and may refer to documents, other webpages, etc.</li>
         </ul>
